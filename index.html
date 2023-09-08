@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Door </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <div class="wrapper">
+        <img src="SailorMoon.webp" alt="SailorMoon">
+      <div id="left-door" class="door">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div id="left-knob" class="knob"></div>
+      </div>
+      <div id="right-door" class="door">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div id="right-knob" class="knob"></div>
+      </div>
+      <div class="music" onmouseover="playAudio()" onmouseout="pauseAudio()">
+        OPEN HERE
+       </div>
+
+       <audio id="hover-audio" src="jinglebells.mp3"></audio>
+
+    
+    </div>
+
+    <script>
+  
+const audio = document.getElementById("hover-audio");
+
+function playAudio() {
+  audio.play();
+}
+
+function pauseAudio() {
+  audio.pause();
+  audio.currentTime = 0; 
+}
+          
+
+    </script>
+</body>
+</html>
